@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Recorder and Pronunciation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Audio Recorder and Pronunciation</h1>
+        <div id="category-container">
+            <select id="categoryDropdown">
+                <option value="" disabled selected>Select Category</option>
+                <option value="Initial /s/"><b>Initial /s/</b></option>
+                <option value="Final /s/"><b>Final /s/</b></option>
+                <option value="Medial /s/"><b>Medial /s/</b></option>
+                <option value="Initial /sp/ Blends"><b>Initial /sp/ Blends</b></option>
+                <option value="Medial /sp/ Blends"><b>Medial /sp/ Blends</b></option>
+                <option value="Initial /st/ Blends"><b>Initial /st/ Blends</b></option>
+                <option value="Medial /st/ Blends"><b>Medial /st/ Blends</b></option>
+                <option value="Final /st/ Blends"><b>Final /st/ Blends</b></option>
+            </select>
+        </div>
+    </header>
+
+    <div id="controls">
+        <button id="startRecording">Start Recording</button>
+        <button id="stopRecording" disabled>Stop Recording</button>
+        <button id="playRecording" disabled>Play Recording</button>
+    </div>
+
+    <audio id="audioPlayer" controls></audio>
+
+    <div id="pronunciationContainer" class="hidden"></div>
+
+    <div id="wordsDropdown" class="hidden">
+        <ul id="wordsList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
