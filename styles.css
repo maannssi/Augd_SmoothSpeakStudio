@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: 'Arial', sans-serif;
     background-color: #f2f2f2;
     margin: 0;
@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    
     height: 100vh;
 }
 
@@ -14,8 +14,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    padding: 20px;
+    width: 97.2%;
+    padding: 20 px;
     background-color: #3498db;
     color: #fff;
 }
@@ -41,6 +41,61 @@ h1 {
 }
 
 button {
+   
+
+#audioPlayer {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+} */
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+}
+
+#dropdown-container {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 400px; /* Adjust the maximum width as needed */
+}
+
+#categoryDropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#controls {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+button {
     /* Add button styles */
 }
 
@@ -49,3 +104,21 @@ button {
     width: 100%;
     max-width: 400px;
 }
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #dropdown-container {
+        max-width: 100%; /* Adjust the maximum width as needed */
+    }
+
+    #controls {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
